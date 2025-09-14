@@ -1,0 +1,60 @@
+{
+	"works": [
+		{
+			"id": 1,
+			"statisticsLabel1": "Clients",
+			"statisticsInfo1": "First Studio",
+			"statisticsLabel2": "Timeline",
+			"statisticsInfo2": "2 Weeks",
+			"statisticsLabel3": "Service",
+			"statisticsInfo3": "Vision Branding",
+			"statisticsLabel4": "Website",
+			"statisticsInfo4": "first.com",
+			"workImage": "./assets/img/works/vision-branding.webp",
+			"prevNavigationImg": "./assets/img/works/design-agency.webp",
+			"nextNavigationImg": "./assets/img/works/brand-studio.webp"
+		},
+		{
+			"id": 2,
+			"statisticsLabel1": "Clients",
+			"statisticsInfo1": "Invision Studio",
+			"statisticsLabel2": "Timeline",
+			"statisticsInfo2": "4 Weeks",
+			"statisticsLabel3": "Service",
+			"statisticsInfo3": "Brand Design",
+			"statisticsLabel4": "Website",
+			"statisticsInfo4": "gola.io",
+			"workImage": "./assets/img/works/brand-studio.webp",
+			"prevNavigationImg": "./assets/img/works/vision-branding.webp",
+			"nextNavigationImg": "./assets/img/works/logo-agency.webp"
+		},
+		{
+			"id": 3,
+			"statisticsLabel1": "Clients",
+			"statisticsInfo1": "Vision",
+			"statisticsLabel2": "Timeline",
+			"statisticsInfo2": "6 Weeks",
+			"statisticsLabel3": "Service",
+			"statisticsInfo3": "Logo Agency",
+			"statisticsLabel4": "Website",
+			"statisticsInfo4": "vision.io",
+			"workImage": "./assets/img/works/logo-agency.webp",
+			"prevNavigationImg": "./assets/img/works/brand-studio.webp",
+			"nextNavigationImg": "./assets/img/works/design-agency.webp"
+		},
+		{
+			"id": 4,
+			"statisticsLabel1": "Clients",
+			"statisticsInfo1": "Best Studio",
+			"statisticsLabel2": "Timeline",
+			"statisticsInfo2": "3 Weeks",
+			"statisticsLabel3": "Service",
+			"statisticsInfo3": "Design Agency",
+			"statisticsLabel4": "Website",
+			"statisticsInfo4": "best.io",
+			"workImage": "./assets/img/works/design-agency.webp",
+			"prevNavigationImg": "./assets/img/works/logo-agency.webp",
+			"nextNavigationImg": "./assets/img/works/vision-branding.webp"
+		}
+	]
+}
