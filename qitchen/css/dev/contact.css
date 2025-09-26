@@ -15,6 +15,7 @@
 }
 
 .left-column {
+  opacity: 0;
   flex-basis: 50%;
   position: sticky;
   left: 1.5rem;
@@ -22,6 +23,9 @@
   height: calc(100vh - 3rem);
   border-radius: 1rem;
   overflow: hidden;
+}
+[data-fls-loaded] .left-column {
+  opacity: 1;
   animation: slide-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .left-column img {
@@ -61,7 +65,7 @@
   z-index: 2;
   pointer-events: none;
 }
-.main-title span {
+[data-fls-loaded] .main-title span {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
 }
 
@@ -94,12 +98,16 @@
 }
 
 .contact {
+  opacity: 0;
   position: relative;
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: minmax(12.5rem, 50%) minmax(12.5rem, 50%);
   gap: 1rem;
+}
+[data-fls-loaded] .contact {
+  opacity: 1;
   animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .hours {
