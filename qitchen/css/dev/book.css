@@ -441,8 +441,6 @@ textarea.input {
   height: calc(100vh - 3rem);
   border-radius: 1rem;
   overflow: hidden;
-}
-[data-fls-loaded] .left-column {
   animation: slide-in-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .left-column img {
@@ -482,7 +480,7 @@ textarea.input {
   z-index: 2;
   pointer-events: none;
 }
-[data-fls-loaded] .main-title span {
+.main-title span {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) 1s both;
 }
 
@@ -521,7 +519,7 @@ textarea.input {
   border-radius: 1rem;
   border: 0.0625rem solid rgba(239, 231, 210, 0.1490196078);
 }
-[data-fls-loaded] .reservation {
+.reservation {
   animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .reservation__header {
