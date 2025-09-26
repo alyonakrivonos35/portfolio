@@ -305,6 +305,10 @@ body {
     width: 35%;
   }
 }@media (max-width: 47.99875em){
+  [class*=__container] {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
   .header__body {
     justify-content: space-between;
     position: fixed;

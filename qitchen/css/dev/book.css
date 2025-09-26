@@ -516,6 +516,7 @@ textarea.input {
 
 .reservation {
   position: relative;
+  z-index: 3;
   height: 100%;
   border-radius: 1rem;
   border: 0.0625rem solid rgba(239, 231, 210, 0.1490196078);
@@ -611,11 +612,6 @@ textarea.input {
     margin-bottom: 1.25rem;
   }
 }
-@media (max-width: 62em) {
-  .reservation {
-    padding-block: 1.25rem;
-  }
-}
 @media (max-width: 61.99875em) {
   .page--book .page__container {
     flex-wrap: wrap;
@@ -645,11 +641,6 @@ textarea.input {
     margin-bottom: 0.625rem;
   }
 }
-@media (max-width: 48em) {
-  .reservation {
-    padding-inline: 1.25rem;
-  }
-}
 @media (max-width: 47.99875em), (max-height: 50em) {
   .form-reservation__input {
     padding: 0.625rem 0.75rem;
@@ -658,9 +649,6 @@ textarea.input {
 @media (max-width: 47.99875em) {
   .page--book {
     padding-top: 4.0625rem;
-  }
-  .reservation__text {
-    font-size: 0.875rem;
   }
   .form-reservation {
     gap: 0.875rem;
@@ -683,6 +671,12 @@ textarea.input {
   .main-title {
     font-size: 2.8125rem;
   }
+  .reservation {
+    padding-block: 1.25rem;
+  }
+  .reservation {
+    padding-inline: 1.25rem;
+  }
   .reservation__title {
     font-size: 1.4375rem;
   }
@@ -691,18 +685,14 @@ textarea.input {
   .main-title {
     font-size: clamp( 2.8125rem , 1.975rem  +  4.1875vw , 7rem );
   }
+  .reservation {
+    padding-block: clamp( 1.25rem , 0.5rem  +  3.75vw , 5rem );
+  }
+  .reservation {
+    padding-inline: clamp( 1.25rem , 0.3rem  +  4.75vw , 6rem );
+  }
   .reservation__title {
     font-size: clamp( 1.4375rem , 1.225rem  +  1.0625vw , 2.5rem );
-  }
-}
-@media (min-width: 48em) and (max-width: 120em) {
-  .reservation {
-    padding-inline: clamp( 1.25rem , -1.91666666666875rem  +  6.5972222222vw , 6rem );
-  }
-}
-@media (min-width: 62em) and (max-width: 120em) {
-  .reservation {
-    padding-block: clamp( 1.25rem , -2.75862068965625rem  +  6.4655172414vw , 5rem );
   }
 }
 @media (min-width: 75em) and (max-width: 120em) {

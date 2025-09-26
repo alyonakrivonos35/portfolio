@@ -332,14 +332,6 @@
     opacity: 1;
   }
 }
-@media (max-width: 87.5em) {
-  .hours__list {
-    font-size: 0.875rem;
-  }
-  .hours__time {
-    font-size: 0.8125rem;
-  }
-}
 @media (max-width: 71.875em) {
   .hours__title .line {
     display: none;
@@ -348,7 +340,7 @@
     gap: 0.5rem;
   }
   .corner__button {
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
   }
   .communicate__title .line {
     display: none;
@@ -358,14 +350,8 @@
   .hours__title {
     font-size: 1.125rem;
   }
-  .hours__list {
-    font-size: 0.875rem;
-  }
   .communicate__title {
     font-size: 1.125rem;
-  }
-  .communicate__info {
-    font-size: 0.75rem;
   }
 }
 @media (max-width: 62em) {

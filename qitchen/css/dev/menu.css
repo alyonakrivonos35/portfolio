@@ -110,6 +110,7 @@
   line-height: 1.3;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
+  text-align: center;
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
   border: 0.0625rem solid rgba(239, 231, 210, 0.1490196078);
@@ -173,11 +174,20 @@
   font-size: 0.75rem;
   margin-left: 0.75rem;
 }
+.dish__name {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+.dish__name::before {
+  font-size: 0.75rem;
+}
 .dish__dashed {
   flex-grow: 1;
   border-bottom: 0.0625rem dashed rgba(239, 231, 210, 0.1490196078);
   line-height: 1;
-  margin: 0 0.625rem;
+  margin-bottom: 0.1875rem;
 }
 .dish__price {
   white-space: nowrap;
@@ -267,6 +277,9 @@
   .item-menu__list {
     gap: 1rem;
   }
+  .dish__composition {
+    font-size: 0.9375rem;
+  }
 }
 @media (max-width: 37.5em) {
   .dish__name {
@@ -286,6 +299,11 @@
   }
   .dish__img img {
     max-width: 9.375rem;
+  }
+}
+@media (max-width: 29.99875em) {
+  .menu-book__link {
+    font-size: 0.625rem;
   }
 }
 @media (max-width: 20em) {
