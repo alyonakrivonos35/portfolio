@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Qitchen</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1758897117126"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117126">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1758897117126">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main class="page page--home">
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__column column-hero">
+							<div class="column-hero__img">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/hero/hero-600.webp" type="image/webp">
+									<source media="(max-width: 1200px)" srcset="./assets/img/hero/hero-1200.webp" type="image/webp">
+									<img alt="Sliced tuna sashimi with green puree on dark plate" src="./assets/img/hero/hero.webp">
+								</picture>
+							</div>
+							<div class="column-hero__body">
+								<h1 class="column-hero__title">
+									Sushi
+									<br>
+									Sensation
+								</h1>
+								<div class="column-hero__corner">
+									<div class="column-hero__socials">
+										<a class="column-hero__social --icon-inst" href="#"></a>
+										<a class="column-hero__social --icon-fb" href="#"></a>
+										<a class="column-hero__social --icon-twit" href="#"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="hero__links">
+							<a class="hero__link link-hero" href="menu.html">
+								<div class="link-hero__img">
+									<picture>
+										<img alt="Chef holding sushi rolls with salad garnish on plate" src="./assets/img/hero/menu.webp">
+									</picture>
+								</div>
+								<div class="link-hero__corner corner">
+									<div class="corner__button">
+										Menu
+										<span class="--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+							<a class="hero__link link-hero" href="book.html">
+								<div class="link-hero__img">
+									<picture>
+										<img alt="girl sitting in a restaurant with a glass" src="./assets/img/hero/reservation.webp">
+									</picture>
+								</div>
+								<div class="link-hero__corner corner">
+									<div class="corner__button">
+										Reservation
+										<span class="--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+							<a class="hero__link link-hero" href="about.html">
+								<div class="link-hero__img">
+									<picture>
+										<img alt="Image restaurant" src="./assets/img/hero/restaurant.webp">
+									</picture>
+								</div>
+								<div class="link-hero__corner corner">
+									<div class="corner__button">
+										Our Restaurant
+										<span class="--icon-arrow"></span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

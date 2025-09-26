@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Blog</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1758897117124"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117124">
+		<link rel="stylesheet" crossorigin="" href="./css/blog.min.css?v=1758897117124">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1758897117124">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page page--blog">
+				<div class="page__container">
+					<div class="page__left left-column">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/pages/blog-600.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/pages/blog.webp">
+						</picture>
+					</div>
+					<div class="page__right right-column">
+						<main class="page__main">
+							<h1 class="page__title main-title">
+								<span>blog</span>
+							</h1>
+							<section class="news">
+								<h2 class="news__title">
+									<span class="line line--before"></span>
+									Behind the Scenes
+									<br>
+									& Latest News
+									<span class="line line--after"></span>
+								</h2>
+								<div class="news__wrapper">
+									<article class="news__item">
+										<div class="news__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog01.webp">
+											</picture>
+										</div>
+										<a href="blog-single.html?id=1" class="news__body">
+											<span class="news__date">
+												<span class="line line--before"></span>
+												24th Aug 2023
+											</span>
+											<h3 class="news__name">How Qitchen Redefines Flavor Harmony in Every Bite</h3>
+											<p class="news__text">
+												Experience an orchestra of tastes as Qitchen's sushi unveils a symphony of perfectly balanced
+									flavors.
+											</p>
+										</a>
+									</article>
+									<article class="news__item">
+										<div class="news__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog02.webp">
+											</picture>
+										</div>
+										<a href="blog-single.html?id=2" class="news__body">
+											<span class="news__date">
+												<span class="line line--before"></span>
+												24th Aug 2023
+											</span>
+											<h3 class="news__name">Unveiling the Mastery Behind Our Culinary Craftsmanship</h3>
+											<p class="news__text">
+												Explore the meticulous artistry and dedication that create Qitchen's renowned sushi
+									perfection.
+											</p>
+										</a>
+									</article>
+									<article class="news__item">
+										<div class="news__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog03.webp">
+											</picture>
+										</div>
+										<a href="blog-single.html?id=3" class="news__body">
+											<span class="news__date">
+												<span class="line line--before"></span>
+												24th Aug 2023
+											</span>
+											<h3 class="news__name">Journey through Freshness Exquisite Sushi Selection</h3>
+											<p class="news__text">
+												Embark on a seafood adventure, guided by Qitchen's fresh and exquisite sushi creations from
+									the sea.
+											</p>
+										</a>
+									</article>
+									<article class="news__item">
+										<div class="news__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog04.webp">
+											</picture>
+										</div>
+										<a href="blog-single.html?id=4" class="news__body">
+											<span class="news__date">
+												<span class="line line--before"></span>
+												24th Aug 2023
+											</span>
+											<h3 class="news__name">Palate with Qitchen's Unsurpassed Sushi Delicacies</h3>
+											<p class="news__text">
+												Discover the heights of gastronomic delight as Qitchen's sushi transports you to a new
+									culinary realm.
+											</p>
+										</a>
+									</article>
+									<article class="news__item">
+										<div class="news__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog05.webp">
+											</picture>
+										</div>
+										<a href="blog-single.html?id=5" class="news__body">
+											<span class="news__date">
+												<span class="line line--before"></span>
+												24th Aug 2023
+											</span>
+											<h3 class="news__name">The Qitchen Experience Beyond Sushi</h3>
+											<p class="news__text">
+												Immerse in Qitchen's passion for culinary excellence, where sushi is more than a dish—it's an
+									experience.
+											</p>
+										</a>
+									</article>
+								</div>
+							</section>
+						</main>
+						<block name="footer">
+							<footer data-fls-footer="" class="footer">
+								<div class="footer__body">
+									<a class="footer__link" href="#">
+										<span>By Pawel Gola</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Licensing</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Styleguide</span>
+									</a>
+								</div>
+							</footer>
+						</block>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

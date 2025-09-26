@@ -1,0 +1,29 @@
+{
+	"works": [
+		{
+			"id": 1,
+			"title": "How Qitchen Redefines Flavor Harmony in Every Bite",
+			"image": "./assets/img/blog-single/blog-single01.webp"
+		},
+		{
+			"id": 2,
+			"title": "Unveiling the Mastery Behind Our Culinary Craftsmanship",
+			"image": "./assets/img/blog-single/blog-single02.webp"
+		},
+		{
+			"id": 3,
+			"title": "Journey through Freshness Exquisite Sushi Selection",
+			"image": "./assets/img/blog-single/blog-single03.webp"
+		},
+		{
+			"id": 4,
+			"title": "Palate with Qitchen's Unsurpassed Sushi Delicacies",
+			"image": "./assets/img/blog-single/blog-single04.webp"
+		},
+		{
+			"id": 5,
+			"title": "The Qitchen Experience Beyond Sushi",
+			"image": "./assets/img/blog-single/blog-single05.webp"
+		}
+	]
+}

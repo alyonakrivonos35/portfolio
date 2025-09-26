@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Contact</title>
+		<script type="module" crossorigin="" src="./js/contact.min.js?v=1758897117124"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117124">
+		<link rel="stylesheet" crossorigin="" href="./css/contact.min.css?v=1758897117124">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1758897117124">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page page--contact">
+				<div class="page__container">
+					<div class="page__left left-column">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/pages/contact-600.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/pages/contact.webp">
+						</picture>
+					</div>
+					<div class="page__right right-column">
+						<main class="page__main">
+							<h1 class="page__title main-title">
+								<span>contact</span>
+							</h1>
+							<section class="contact">
+								<div class="contact__hours hours">
+									<div class="hours__head">
+										<h2 class="hours__title">
+											<span class="line line--before"></span>
+											Opening Hours
+											<span class="line line--after"></span>
+										</h2>
+									</div>
+									<ul class="hours__list">
+										<li>
+											<span class="hours__day">Monday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Tuesday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Wednesday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Thursday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Friday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Saturday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+										<li>
+											<span class="hours__day">Sunday</span>
+											<span class="hours__dashed"></span>
+											<span class="hours__time">16:00 - 22:30</span>
+										</li>
+									</ul>
+								</div>
+								<div class="contact__social social">
+									<a class="social__link" href="#">
+										<picture>
+											<img class="social__img" alt="Image" src="./assets/img/contact/social1.webp">
+										</picture>
+										<span class="social__icon --icon-inst"></span>
+									</a>
+									<a class="social__link" href="#">
+										<picture>
+											<img class="social__img" alt="Image" src="./assets/img/contact/social2.webp">
+										</picture>
+										<span class="social__icon --icon-fb"></span>
+									</a>
+									<a class="social__link" href="#">
+										<picture>
+											<img class="social__img" alt="Image" src="./assets/img/contact/social3.webp">
+										</picture>
+										<span class="social__icon --icon-twit"></span>
+									</a>
+									<a class="social__link" href="#">
+										<picture>
+											<img class="social__img" alt="Image" src="./assets/img/contact/social4.webp">
+										</picture>
+										<span class="social__icon --icon-inst"></span>
+									</a>
+								</div>
+								<div class="contact__map map">
+									<div data-fls-map="" class="map__wrapper">
+										<!--
+<div data-fls-map-marker class="map__marker" data-fls-map-lat="50.0684133741488"
+data-fls-map-lng="14.457768635782955">
+</div>
+-->
+										<div data-fls-map-body="" class="map__body" data-fls-map-lat="50.0684133741488" data-fls-map-lng="14.457768635782955"></div>
+									</div>
+									<div class="map__corner corner">
+										<a href="#" class="corner__button">
+											Show Route
+											<span class="--icon-arrow"></span>
+										</a>
+									</div>
+								</div>
+								<div class="contact__communicate communicate">
+									<div class="communicate__head">
+										<h2 class="communicate__title">
+											<span class="line line--before"></span>
+											Get in touch
+											<span class="line line--after"></span>
+										</h2>
+									</div>
+									<ul class="communicate__list">
+										<li class="communicate__item">
+											<span class="communicate__name">Address</span>
+											<a href="#" class="communicate__info">23 Greenfield Avenue, Prague 120 00</a>
+										</li>
+										<li class="communicate__item">
+											<span class="communicate__name">Phone</span>
+											<a href="tel:+491234567890" class="communicate__info">+49 1234 567890</a>
+										</li>
+										<li class="communicate__item">
+											<span class="communicate__name">Email</span>
+											<a href="mailto:email@example.com" class="communicate__info">email@example.com</a>
+										</li>
+										<li class="communicate__item">
+											<span class="communicate__name">Follow</span>
+											<div class="communicate__info communicate__info--links">
+												<a class="--icon-inst" href="#"></a>
+												<a class="--icon-fb" href="#"></a>
+												<a class="--icon-twit" href="#"></a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</section>
+						</main>
+						<block name="footer">
+							<footer data-fls-footer="" class="footer">
+								<div class="footer__body">
+									<a class="footer__link" href="#">
+										<span>By Pawel Gola</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Licensing</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Styleguide</span>
+									</a>
+								</div>
+							</footer>
+						</block>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

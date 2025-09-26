@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Book a table</title>
+		<script type="module" crossorigin="" src="./js/book.min.js?v=1758897117126"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117126">
+		<link rel="stylesheet" crossorigin="" href="./css/book.min.css?v=1758897117126">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1758897117126">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link menu__link--active">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page page--book">
+				<div class="page__container">
+					<div class="page__left left-column">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/pages/book-600.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/pages/book.webp">
+						</picture>
+					</div>
+					<div class="page__right right-column">
+						<main class="page__main">
+							<h1 class="page__title main-title">
+								<span>
+									Book
+									<br>
+									a Table
+								</span>
+							</h1>
+							<section class="reservation">
+								<div class="reservation__header">
+									<h2 class="reservation__title">
+										<span class="line line--before"></span>
+										Reservation
+										<span class="line line--after"></span>
+									</h2>
+									<div class="reservation__text">
+										<p>
+											Secure your spot at Qitchen, where exceptional sushi and a remarkable dining experience await.
+										</p>
+									</div>
+								</div>
+								<form class="reservation__form form-reservation" data-fls-form="" method="POST">
+									<input data-fls-input="" data-fls-form-validatenow="" required autocomplete="off" type="text" name="name" data-fls-form-errtext="Error name" placeholder="Name" class="form-reservation__input">
+									<input data-fls-input="" required data-fls-input-mask="+38(999) 999-9999" autocomplete="on" type="tel" name="number" data-fls-form-errtext="Error number" placeholder="Phone Number" class="form-reservation__input">
+									<input data-fls-input="" required autocomplete="on" type="email" name="email" data-fls-form-errtext="Error email" placeholder="Email" class="form-reservation__input">
+									<div class="form-reservation__bottom">
+										<input data-fls-input="" required type="number" autocomplete="off" name="guests" placeholder="Guests" class="form-reservation__input">
+										<input data-fls-datepicker="" required autocomplete="off" type="text" name="date" data-fls-form-errtext="Помилка" placeholder="Date" class="form-reservation__input">
+										<input data-fls-input="" required autocomplete="off" type="text" name="time" placeholder="Time" class="form-reservation__input">
+									</div>
+									<button type="submit" class="form-reservation__button">Reserve</button>
+								</form>
+							</section>
+						</main>
+						<block name="footer">
+							<footer data-fls-footer="" class="footer">
+								<div class="footer__body">
+									<a class="footer__link" href="#">
+										<span>By Pawel Gola</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Licensing</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Styleguide</span>
+									</a>
+								</div>
+							</footer>
+						</block>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

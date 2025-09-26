@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>About</title>
+		<script type="module" crossorigin="" src="./js/app.min.js?v=1758897117125"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117125">
+		<link rel="stylesheet" crossorigin="" href="./css/about.min.css?v=1758897117125">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1758897117125">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link menu__link--active">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page page--about">
+				<div class="page__container">
+					<div class="page__left left-column">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/pages/about-600.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/pages/about.webp">
+						</picture>
+					</div>
+					<div class="page__right right-column">
+						<main class="page__main">
+							<h1 class="page__title main-title">
+								<span>about</span>
+							</h1>
+							<section class="about">
+								<div class="about__cards cards-about">
+									<div class="cards-about__column">
+										<h2 class="cards-about__title">Sushi Artistry Redefined</h2>
+										<div class="cards-about__text">
+											<p>
+												Where culinary craftsmanship meets modern elegance. Indulge in the finest sushi, expertly
+									curated to elevate your dining experience.
+											</p>
+										</div>
+									</div>
+									<div class="cards-about__img">
+										<picture>
+											<img alt="Image" src="./assets/img/about/aboutus.webp">
+										</picture>
+									</div>
+								</div>
+								<div class="about__honors honors">
+									<div class="honors__card">
+										<div class="honors__rated">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<h3 class="honors__title">Trip Advisor</h3>
+										<p class="honors__subtitle">Best Steak House Prague</p>
+									</div>
+									<div class="honors__card">
+										<div class="honors__rated">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<h3 class="honors__title">Michelin Guide</h3>
+										<p class="honors__subtitle">Best Steak House Prague</p>
+									</div>
+									<div class="honors__card">
+										<div class="honors__rated">
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+											<span class="--icon-star"></span>
+										</div>
+										<h3 class="honors__title">Star Dining</h3>
+										<p class="honors__subtitle">Best Steak House Prague</p>
+									</div>
+								</div>
+								<div class="about__cards cards-about cards-about--reverse">
+									<div class="cards-about__column">
+										<div class="cards-about__title">
+											<h2>
+												<span class="line line--before"></span>
+												Our Story
+												<span class="line line--after"></span>
+											</h2>
+										</div>
+										<div class="cards-about__text">
+											<p>
+												Founded with a passion for culinary excellence, Qitchen's journey began in the heart of
+									Prague. Over years, it evolved into a haven for sushi enthusiasts, celebrated for its artful
+									mastery and devotion to redefining gastronomy.
+											</p>
+										</div>
+									</div>
+									<div class="cards-about__img">
+										<picture>
+											<img alt="Image" src="./assets/img/about/story.webp">
+										</picture>
+									</div>
+								</div>
+							</section>
+						</main>
+						<block name="footer">
+							<footer data-fls-footer="" class="footer">
+								<div class="footer__body">
+									<a class="footer__link" href="#">
+										<span>By Pawel Gola</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Licensing</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Styleguide</span>
+									</a>
+								</div>
+							</footer>
+						</block>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

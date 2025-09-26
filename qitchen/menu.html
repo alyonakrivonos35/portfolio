@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Satoshi-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/Satoshi-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Menu</title>
+		<script type="module" crossorigin="" src="./js/menu.min.js?v=1758897117126"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1758897117126">
+		<link rel="stylesheet" crossorigin="" href="./css/menu.min.css?v=1758897117126">
+		<link rel="stylesheet" crossorigin="" href="./css/footer.min.css?v=1758897117126">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__body">
+						<div class="header__icon">
+							<button type="button" data-fls-menu="" class="icon-menu">
+								<span></span>
+							</button>
+						</div>
+						<a href="index.html" class="header__link-logo">
+							<img class="header__logo" src="./assets/img/logo.svg" alt="logo">
+						</a>
+						<div class="header__menu menu">
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="menu.html" class="menu__link menu__link--active">Menu</a>
+									</li>
+									<li class="menu__item">
+										<a href="about.html" class="menu__link">About</a>
+									</li>
+									<li class="menu__item">
+										<a href="book.html" class="menu__link">Book a table</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					</div>
+				</div>
+				<div class="header__menu-overlay menu-overlay">
+					<nav class="menu-overlay__body">
+						<ul class="menu-overlay__list">
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="menu.html">Menu</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="book.html">REservation</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="about.html">About</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="contact.html">Contact</a>
+							</li>
+							<li>
+								<a class="menu-overlay__link" href="blog.html">Blog</a>
+							</li>
+							<li>
+								<span class="menu-overlay__decor menu-overlay__decor--top"></span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<div class="page page--menu">
+				<div class="page__container">
+					<div class="page__left left-column">
+						<picture>
+							<source media="(max-width: 600px)" srcset="./assets/img/menu/menu-600.webp" type="image/webp">
+							<img alt="Image" src="./assets/img/menu/menu.webp">
+						</picture>
+					</div>
+					<div class="page__right right-column">
+						<main class="page__main">
+							<h1 class="page__title main-title">
+								<span>Menu</span>
+							</h1>
+							<section class="menu-book">
+								<div class="menu-book__body">
+									<div class="menu-book__links">
+										<a class="menu-book__link" href="#" data-fls-scrollto=".item-menu--maki" data-fls-scrollto-top="60">Maki</a>
+										<a class="menu-book__link" href="#" data-fls-scrollto=".item-menu--uramaki" data-fls-scrollto-top="60">UraMaki</a>
+										<a class="menu-book__link" href="#" data-fls-scrollto=".item-menu--special" data-fls-scrollto-top="60">Special Rolls</a>
+									</div>
+									<div class="menu-book__item item-menu item-menu--maki">
+										<h2 class="item-menu__title">
+											<span class="line line--before"></span>
+											Maki
+											<span class="line line--after"></span>
+										</h2>
+										<ul class="item-menu__list">
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="spicy tuna maki" src="./assets/img/menu/maki/spicy-tuna-maki.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Spicy Tuna Maki
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$5</span>
+													</div>
+													<p class="dish__composition">
+														A tantalizing blend of spicy tuna, cucumber, and avocado, harmoniously rolled in nori
+											and
+											seasoned rice.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Mango Maki" src="./assets/img/menu/maki/mango-maki.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Mango Maki</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$5</span>
+													</div>
+													<p class="dish__composition">
+														Tempura-fried shrimp, cucumber, and cream cheese embrace a center of fresh avocado,
+											delivering a satisfying contrast of textures.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Salmon Maki" src="./assets/img/menu/maki/salmon-maki.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Salmon Maki</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$5</span>
+													</div>
+													<p class="dish__composition">
+														Shiitake mushrooms, avocado, and pickled daikon radish nestle within a roll of seasoned
+											rice,
+											coated with nutty sesame seeds.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Tuna Maki" src="./assets/img/menu/maki/tuna-maki.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Tuna Maki</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$5</span>
+													</div>
+													<p class="dish__composition">
+														A vibrant assortment of julienned carrots, bell peppers, and cucumber, tightly encased
+											in
+											a
+											nori-wrapped rice roll.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="menu-book__item item-menu item-menu--uramaki">
+										<h2 class="item-menu__title">
+											<span class="line line--before"></span>
+											UraMaki
+											<span class="line line--after"></span>
+										</h2>
+										<ul class="item-menu__list">
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Volcano Delight" src="./assets/img/menu/uramaki/volcano-delight.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Volcano Delight
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														Creamy crab salad, avocado, and cucumber rolled inside, topped with spicy tuna and
+											drizzled
+											with fiery sriracha sauce.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Rainbow Fusion" src="./assets/img/menu/uramaki/rainbow-fusion.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Rainbow Fusioni</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														A colorful blend of fresh tuna, salmon, yellowtail, and avocado, enveloping a core of
+											cucumber and crab stick.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Dragon Elegance" src="./assets/img/menu/uramaki/dragon-elegance.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Dragon Elegance</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														Grilled eel and avocado nestled within the roll, draped with slices of ripe avocado
+											resembling dragon scales.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Sunset Serenity" src="./assets/img/menu/uramaki/sunset-serenity.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Sunset Serenity</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														Tempura shrimp, cucumber, and spicy mayo embraced by a roll of soy paper, crowned with
+											slices
+											of creamy mango.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Mystic Garden" src="./assets/img/menu/uramaki/mystic-garden.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Mystic Garden</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														Shiitake mushrooms, asparagus, and cucumber intermingle with crispy tempura bits,
+											blanketed
+											by a layer of sesame seeds.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Ocean Breeze" src="./assets/img/menu/uramaki/ocean-breeze.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Ocean Breeze</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														A medley of fresh shrimp, crab stick, and avocado, laced with a gentle touch of zesty
+											yuzu-infused tobiko.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Tokyo Blossom" src="./assets/img/menu/uramaki/tokyo-blossom.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">Tokyo Blossom</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$12</span>
+													</div>
+													<p class="dish__composition">
+														Delicate pink soy paper envelopes a blend of tuna, crab stick, and cucumber,
+											embellished
+											with
+											edible flower petals.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="menu-book__item item-menu item-menu--special">
+										<h2 class="item-menu__title">
+											<span class="line line--before"></span>
+											Special Rolls
+											<span class="line line--after"></span>
+										</h2>
+										<ul class="item-menu__list">
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Sunrise Bliss" src="./assets/img/menu/special/sunrise-bliss.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Sunrise Bliss
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$16</span>
+													</div>
+													<p class="dish__composition">
+														A delicate combination of fresh salmon, cream cheese, and asparagus, rolled in
+											orange-hued
+											tobiko for a burst of sunrise-inspired flavors.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Mango Tango Fusion" src="./assets/img/menu/special/mango-tango-fusion.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Sunrise Bliss
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$16</span>
+													</div>
+													<p class="dish__composition">
+														Tempura shrimp, cucumber, and avocado dance alongside sweet mango slices, drizzled with
+											a
+											tangy mango sauce.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Truffle Indulgence" src="./assets/img/menu/special/truffle-indulgence.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Truffle Indulgence
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$16</span>
+													</div>
+													<p class="dish__composition">
+														Decadent slices of black truffle grace a roll of succulent wagyu beef, cucumber, and
+											microgreens, culminating in an exquisite umami symphony.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Pacific Firecracker" src="./assets/img/menu/special/pacific-firecracker.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Pacific Firecracker
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$16</span>
+													</div>
+													<p class="dish__composition">
+														Spicy crab salad, tempura shrimp, and jalapeño peppers combine in a fiery ensemble,
+											accented
+											with a chili-infused aioli.
+													</p>
+												</div>
+											</li>
+											<li class="item-menu__dish dish">
+												<div class="dish__img">
+													<picture>
+														<img alt="Eternal Eel Enchantment" src="./assets/img/menu/special/eternal-eel-enchantment.webp">
+													</picture>
+												</div>
+												<div class="dish__body">
+													<div class="dish__header">
+														<h3 class="dish__name">
+															Eternal Eel Enchantment
+															<span class="--icon-leaf"></span>
+														</h3>
+														<span class="dish__dashed"></span>
+														<span class="dish__price">$16</span>
+													</div>
+													<p class="dish__composition">
+														An enchanting blend of eel tempura, foie gras, and cucumber, elegantly layered with
+											truffle
+											oil and gold leaf for a touch of opulence.
+													</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						</main>
+						<block name="footer">
+							<footer data-fls-footer="" class="footer">
+								<div class="footer__body">
+									<a class="footer__link" href="#">
+										<span>By Pawel Gola</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Licensing</span>
+									</a>
+									<a class="footer__link" href="#">
+										<span>Styleguide</span>
+									</a>
+								</div>
+							</footer>
+						</block>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
