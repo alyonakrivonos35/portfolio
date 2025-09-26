@@ -38,11 +38,7 @@
 }
 
 .right-column {
-  position: relative;
   flex-basis: 50%;
-}
-[data-fls-loaded] .right-column {
-  animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .main-title {
@@ -90,7 +86,11 @@
 }
 
 .menu-book {
+  position: relative;
   margin-bottom: 1rem;
+}
+[data-fls-loaded] .menu-book {
+  animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .menu-book__body {
   padding-top: 2rem;

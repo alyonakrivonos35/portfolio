@@ -42,15 +42,11 @@
 }
 
 .right-column {
-  position: relative;
   flex-basis: 50%;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-[data-fls-loaded] .right-column {
-  animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .main-title {
@@ -98,9 +94,13 @@
 }
 
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+[data-fls-loaded] .about {
+  animation: slide-in-right 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .cards-about {
   display: flex;

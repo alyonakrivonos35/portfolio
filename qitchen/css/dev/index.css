@@ -61,6 +61,7 @@
   height: 100%;
   display: flex;
   align-items: end;
+  padding-block: 3.25rem;
 }
 .column-hero__title {
   font-family: "Forum", sans-serif;
@@ -242,13 +243,10 @@
     flex-direction: column;
   }
   .column-hero__body {
-    padding-block: 5rem;
+    padding-block: 6.25rem;
   }
 }
 @media (max-width: 20em) {
-  .column-hero__body {
-    padding-block: 1.5rem;
-  }
   .column-hero__body {
     padding-inline: 1.5rem;
   }
@@ -258,9 +256,6 @@
 }
 @media (min-width: 20em) and (max-width: 120em) {
   .column-hero__body {
-    padding-block: clamp( 1.5rem , 1.15rem  +  1.75vw , 3.25rem );
-  }
-  .column-hero__body {
     padding-inline: clamp( 1.5rem , 0.8375rem  +  3.3125vw , 4.8125rem );
   }
   .column-hero__title {
@@ -268,9 +263,6 @@
   }
 }
 @media (min-width: 120em) {
-  .column-hero__body {
-    padding-block: 3.25rem;
-  }
   .column-hero__body {
     padding-inline: 4.8125rem;
   }
