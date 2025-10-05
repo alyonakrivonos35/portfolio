@@ -1,0 +1,147 @@
+{
+	"catalogue": [
+		{
+			"id": "pillows",
+			"categoryTitle": "our pillows",
+			"categoryDesc": "Our pillows have made a name for themselves with regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they make sure you drift off to sleep in no time. Specially designed with advanced technology, our pillows contours perfectly to your body, giving you just the right amount of support for perfect alignment throughout the night. Held on pedestals for its breathability, coolness and durability, these state-of-the-art pillows are the perfect way to end each day.",
+			"products": [
+				{
+					"title": "Hotel Quality Pillow",
+					"price": "125$",
+					"image": "./assets/img/catalogue/pillow/pillow01.webp"
+				},
+				{
+					"title": "Memory Foam Pillow",
+					"price": "140$",
+					"image": "./assets/img/catalogue/pillow/pillow02.webp"
+				},
+				{
+					"title": "Hotel Quality Pillow",
+					"price": "125$",
+					"image": "./assets/img/catalogue/pillow/pillow03.webp"
+				},
+				{
+					"title": "Hotel Quality Pillow",
+					"price": "125$",
+					"image": "./assets/img/catalogue/pillow/pillow04.webp"
+				},
+				{
+					"title": "Memory Foam Pillow",
+					"price": "140$",
+					"image": "./assets/img/catalogue/pillow/pillow02.webp"
+				}
+			]
+		},
+		{
+			"id": "bed-sheets",
+			"categoryTitle": "our bed sheets",
+			"categoryDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium?",
+			"products": [
+				{
+					"title": "Luxury bed sheets",
+					"price": "111$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				},
+				{
+					"title": "Luxury bed sheets",
+					"price": "112$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				},
+				{
+					"title": "Luxury bed sheets",
+					"price": "113$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				},
+				{
+					"title": "Luxury bed sheets",
+					"price": "114$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				},
+				{
+					"title": "Luxury bed sheets",
+					"price": "115$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				},
+				{
+					"title": "Luxury bed sheets",
+					"price": "116$",
+					"image": "./assets/img/catalogue/bed-sheets.png"
+				}
+			]
+		},
+		{
+			"id": "mattress",
+			"categoryTitle": "our mattress",
+			"categoryDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium?",
+			"products": [
+				{
+					"title": "Hotel Quality mattress",
+					"price": "111$",
+					"image": "./assets/img/catalogue/mattress.png"
+				},
+				{
+					"title": "Hotel Quality mattress",
+					"price": "112$",
+					"image": "./assets/img/catalogue/mattress.png"
+				},
+				{
+					"title": "Hotel Quality mattress",
+					"price": "113$",
+					"image": "./assets/img/catalogue/mattress.png"
+				},
+				{
+					"title": "Hotel Quality mattress",
+					"price": "114$",
+					"image": "./assets/img/catalogue/mattress.png"
+				},
+				{
+					"title": "Hotel Quality mattress",
+					"price": "115$",
+					"image": "./assets/img/catalogue/mattress.png"
+				},
+				{
+					"title": "Hotel Quality mattress",
+					"price": "116$",
+					"image": "./assets/img/catalogue/mattress.png"
+				}
+			]
+		},
+		{
+			"id": "duvets",
+			"categoryTitle": "our duvets",
+			"categoryDesc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatibus quidem delectus reiciendis atque. Amet iste libero autem minima accusantium?",
+			"products": [
+				{
+					"title": "Hotel Quality duvets",
+					"price": "111$",
+					"image": "./assets/img/catalogue/duvets.png"
+				},
+				{
+					"title": "Hotel Quality duvets",
+					"price": "112$",
+					"image": "./assets/img/catalogue/duvets.png"
+				},
+				{
+					"title": "Hotel Quality duvets",
+					"price": "113$",
+					"image": "./assets/img/catalogue/duvets.png"
+				},
+				{
+					"title": "Hotel Quality duvets",
+					"price": "114$",
+					"image": "./assets/img/catalogue/duvets.png"
+				},
+				{
+					"title": "Hotel Quality duvets",
+					"price": "115$",
+					"image": "./assets/img/catalogue/duvets.png"
+				},
+				{
+					"title": "Hotel Quality duvets",
+					"price": "116$",
+					"image": "./assets/img/catalogue/duvets.png"
+				}
+			]
+		}
+	]
+}

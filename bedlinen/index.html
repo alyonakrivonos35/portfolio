@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preload" href="./assets/fonts/Leiko-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/CabinetGrotesk-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/CabinetGrotesk-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/CabinetGrotesk-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/CabinetGrotesk-Extrabold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="preload" href="./assets/fonts/CabinetGrotesk-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Home Page</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759666174318"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1759666174318">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759666174318">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__menu menu">
+						<button data-fls-menu="" type="button" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul data-line-parent="" class="menu__list">
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link menu__link--active">Home</a>
+								</li>
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link">About</a>
+								</li>
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link">Payment</a>
+								</li>
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link">Catalog</a>
+								</li>
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link">Shop</a>
+								</li>
+								<li data-line-item="" class="menu__item">
+									<a href="#" class="menu__link">Blog</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+					<div class="header__actions">
+						<a href="#" class="header__icon --icon-cart"></a>
+						<a href="#" class="header__icon --icon-user"></a>
+						<a href="#" class="header__icon --icon-language"></a>
+					</div>
+				</div>
+			</header>
+			<main class="page page--index">
+				<section class="hero">
+					<div data-fls-parallax-parent="" class="hero__container">
+						<h1 class="hero__title">Dream in comfort</h1>
+						<div class="hero__subtitle">Creating your perfect sleep sanctuary with us</div>
+						<a data-fls-button="" href="#" class="hero__button button">
+							<span class="button__icon --icon-arrow-big">
+								<img src="./assets/img/icons/cyrcle.svg" alt="icon">
+							</span>
+							<span>shop now</span>
+						</a>
+						<div data-fls-parallax="" class="hero__images">
+							<picture>
+								<source media="(max-width: 600px)" srcset="./assets/img/hero/hero-600.webp" type="image/webp">
+								<img class="hero__img" alt="Image" src="./assets/img/hero/hero.webp">
+							</picture>
+						</div>
+						<div class="hero__feathers">
+							<picture>
+								<img data-prlx-mouse="" data-prlx-cx="50" class="hero__feather hero__feather--1" alt="Image" src="./assets/img/hero/1.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="" data-prlx-cx="50" class="hero__feather hero__feather--2" alt="Image" src="./assets/img/hero/2.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="" data-prlx-cx="50" class="hero__feather hero__feather--3" alt="Image" src="./assets/img/hero/3.webp">
+							</picture>
+							<div data-prlx-mouse="" data-prlx-dyr="" data-prlx-cx="50" class="hero__feather hero__feather--4">
+								<picture>
+									<img alt="Image" src="./assets/img/hero/4.webp">
+								</picture>
+							</div>
+							<picture>
+								<img data-prlx-mouse="" data-prlx-dyr="" data-prlx-cy="30" class="hero__feather hero__feather--5" alt="Image" src="./assets/img/hero/5.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="" data-prlx-dyr="" data-prlx-cy="30" class="hero__feather hero__feather--6" alt="Image" src="./assets/img/hero/6.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="" data-prlx-dxr="" data-prlx-cy="30" class="hero__feather hero__feather--7" alt="Image" src="./assets/img/hero/7.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="170" data-prlx-dxr="" class="hero__feather hero__feather--8" alt="Image" src="./assets/img/hero/8.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="40" data-prlx-dxr="" class="hero__feather hero__feather--9" alt="Image" src="./assets/img/hero/9.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="40" data-prlx-dxr="" data-prlx-cy="40" class="hero__feather hero__feather--10" alt="Image" src="./assets/img/hero/10.webp">
+							</picture>
+							<picture>
+								<img data-prlx-mouse="80" data-prlx-dxr="" class="hero__feather hero__feather--11" alt="Image" src="./assets/img/hero/11.webp">
+							</picture>
+						</div>
+					</div>
+				</section>
+				<section class="about">
+					<div class="about__container">
+						<ul data-fls-watcher="" data-fls-watcher-threshold="0.8" class="about__qualities qualities">
+							<li class="qualities__item">
+								<div class="qualities__body">
+									<span class="qualities__icon --icon-sleep"></span>
+									<span class="qualities__label">healthy sleep</span>
+								</div>
+							</li>
+							<li class="qualities__item">
+								<div class="qualities__body">
+									<span class="qualities__icon --icon-cotton"></span>
+									<span class="qualities__label">100%cotton</span>
+								</div>
+							</li>
+							<li class="qualities__item">
+								<div class="qualities__body">
+									<span class="qualities__icon --icon-tailoring"></span>
+									<span class="qualities__label">best tailoring</span>
+								</div>
+							</li>
+							<li class="qualities__item">
+								<div class="qualities__body">
+									<span class="qualities__icon --icon-grey-feather"></span>
+									<span class="qualities__label">Comfort</span>
+								</div>
+							</li>
+						</ul>
+						<div class="about__info info-about">
+							<div data-fls-showmore="" class="info-about__column">
+								<h2 class="info-about__title">About sleepy shop</h2>
+								<div data-fls-showmore-content="250" class="info-about__text">
+									<p>
+										Sleepy is the perfect bedding store for anyone looking to give their bedroom a makeover. With a
+							wide selection of linens including sheets, duvet covers, quilts and pillow cases, they have
+							something to suit every taste.
+									</p>
+									<p>
+										They offer several color options, patterns and textures so that you can create the perfect ambience
+							in your bedroom. Their quality is second to none, with materials well-chosen for comfort and
+							durability.
+									</p>
+									<p>
+										They offer several color options, patterns and textures so that you can create the perfect ambience
+							in your bedroom. Their quality is second to none, with materials well-chosen for comfort and
+							durability.
+									</p>
+								</div>
+								<button hidden data-fls-showmore-button="" type="button" class="info-about__button">
+									<span>Read More</span>
+									<span>Hide</span>
+								</button>
+							</div>
+							<div data-fls-parallax-parent="" class="info-about__pictures">
+								<div class="info-about__images">
+									<picture>
+										<img data-fls-parallax="" class="info-about__cloud" alt="Image" src="./assets/img/about/cloud.webp">
+									</picture>
+									<picture>
+										<img class="info-about__img" alt="Image" src="./assets/img/about/about.webp">
+									</picture>
+									<picture>
+										<img data-fls-parallax="" class="info-about__front-cloud" alt="Image" src="./assets/img/about/cloud-front.webp">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="catalogue">
+					<div class="catalogue__container">
+						<h2 data-fls-watcher="" class="catalogue__title">Our Catalogue</h2>
+						<div class="catalogue__wrapper">
+							<div class="catalogue__sidebar sidebar">
+								<div id="pillows" class="sidebar__category active">
+									<button class="sidebar__button" title="Pillows">
+										<img src="./assets/img/icons/pillow.svg" alt="Image">
+									</button>
+								</div>
+								<div id="bed-sheets" class="sidebar__category">
+									<button class="sidebar__button" title="Bed sheets">
+										<img src="./assets/img/icons/bed-sheets.svg" alt="Image">
+									</button>
+								</div>
+								<div id="mattress" class="sidebar__category">
+									<button class="sidebar__button" title="Mattress">
+										<img src="./assets/img/icons/mattres.svg" alt="Image">
+									</button>
+								</div>
+								<div id="duvets" class="sidebar__category">
+									<button class="sidebar__button" title="Duvets">
+										<img src="./assets/img/icons/duvet.svg" alt="Image">
+									</button>
+								</div>
+								<div class="sidebar__arrow">
+									<button class="sidebar__button" data-cat="next" title="Next">
+										<img src="./assets/img/icons/arrow-down.svg" alt="Image">
+									</button>
+								</div>
+							</div>
+							<div class="catalogue__category category">
+								<div class="category__header">
+									<h3 id="categoryTitle" class="category__title">our pillows</h3>
+									<p id="categoryDesc" class="category__description">
+										Our pillows have made a name for themselves with
+							regard to comfort and quality. Crafted from plush fibers like bamboo and premium goose down, they
+							make sure you drift off to sleep in no time. Specially designed with advanced technology, our
+							pillows contours perfectly to your body, giving you just the right amount of support for perfect
+							alignment throughout the night. Held on pedestals for its breathability, coolness and durability,
+							these state-of-the-art pillows are the perfect way to end each day.
+									</p>
+								</div>
+								<div class="category__slider-wrap">
+									<div data-fls-slider="" class="category__swiper swiper-category swiper">
+										<div class="swiper-category__wrapper swiper-wrapper" id="slides-root">
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow01.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow02.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow03.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow04.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow02.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow04.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-category__slide swiper-slide">
+												<div class="product">
+													<div class="product__image">
+														<picture>
+															<img class="product__img" alt="Image" src="./assets/img/catalogue/pillow/pillow02.webp">
+														</picture>
+													</div>
+													<div class="product__info">
+														<a href="#" class="product__title">Hotel Quality Pillow</a>
+														<div class="product__price">125$</div>
+														<button class="product__cart catr --icon-cart"></button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fls-watcher-once="" data-fls-watcher="" data-fls-watcher-threshold="0.5" class="save">
+					<div class="save__container">
+						<div class="save__body">
+							<div class="save__content">
+								<h2 class="save__title">save up to 70% Off</h2>
+								<div class="save__text">
+									<p>
+										Our pillows are the perfect way to improve your sleep quality, and now there’s even more incentive
+							to
+							upgrade with our 70% off offer! Get cozy with a premium pillow that is soft, supportive, and
+							durable
+							enough to last for years
+									</p>
+								</div>
+							</div>
+							<a data-fls-button="" href="#" class="save__button button">
+								<span class="button__icon --icon-arrow-big">
+									<img src="./assets/img/icons/cyrcle.svg" alt="icon">
+								</span>
+								<span>buy now</span>
+							</a>
+						</div>
+					</div>
+				</section>
+				<section class="blog">
+					<div class="blog__container">
+						<h2 data-fls-watcher="" class="blog__title">Our Blog</h2>
+						<div class="blog__body">
+							<div data-fls-slider="" class="blog__slider swiper">
+								<div class="blog__wrapper swiper-wrapper">
+									<div class="blog__slide slide-blog swiper-slide">
+										<div class="slide-blog__column">
+											<h3 class="slide-blog__title">benefits of good pellow</h3>
+											<p class="slide-blog__text">
+												There has long been speculation about the impact that sleeping on a quality pillow and seeing
+									your dreams have on each other. Some people believe that when you sleep on good pillows, it
+									allows dream energy to flow freely, allowing for clearer and more vivid dreams. Others
+									maintain that a good night's sleep is simply not possible without a comfortable and
+									supportive pillow...
+											</p>
+											<a class="slide-blog__link" href="#">read more</a>
+										</div>
+										<div class="slide-blog__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog01.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="blog__slide slide-blog swiper-slide">
+										<div class="slide-blog__column">
+											<h3 class="slide-blog__title">benefits of good pellow</h3>
+											<p class="slide-blog__text">
+												There has long been speculation about the impact that sleeping on a quality pillow and seeing
+									your dreams have on each other. Some people believe that when you sleep on good pillows, it
+									allows dream energy to flow freely, allowing for clearer and more vivid dreams. Others
+									maintain that a good night's sleep is simply not possible without a comfortable and
+									supportive pillow...
+											</p>
+											<a class="slide-blog__link" href="#">read more</a>
+										</div>
+										<div class="slide-blog__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog02.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="blog__slide slide-blog swiper-slide">
+										<div class="slide-blog__column">
+											<h3 class="slide-blog__title">benefits of good pellow</h3>
+											<p class="slide-blog__text">
+												There has long been speculation about the impact that sleeping on a quality pillow and seeing
+									your dreams have on each other. Some people believe that when you sleep on good pillows, it
+									allows dream energy to flow freely, allowing for clearer and more vivid dreams. Others
+									maintain that a good night's sleep is simply not possible without a comfortable and
+									supportive pillow...
+											</p>
+											<a class="slide-blog__link" href="#">read more</a>
+										</div>
+										<div class="slide-blog__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog03.webp">
+											</picture>
+										</div>
+									</div>
+									<div class="blog__slide slide-blog swiper-slide">
+										<div class="slide-blog__column">
+											<h3 class="slide-blog__title">benefits of good pellow</h3>
+											<p class="slide-blog__text">
+												There has long been speculation about the impact that sleeping on a quality pillow and seeing
+									your dreams have on each other. Some people believe that when you sleep on good pillows, it
+									allows dream energy to flow freely, allowing for clearer and more vivid dreams. Others
+									maintain that a good night's sleep is simply not possible without a comfortable and
+									supportive pillow...
+											</p>
+											<a class="slide-blog__link" href="#">read more</a>
+										</div>
+										<div class="slide-blog__img">
+											<picture>
+												<img alt="Image" src="./assets/img/blog/blog02.webp">
+											</picture>
+										</div>
+									</div>
+								</div>
+								<div class="blog__buttons">
+									<div class="blog__button-prev swiper-button-prev --icon-arrow"></div>
+									<div class="blog__button-pagination swiper-pagination"></div>
+									<div class="blog__button-next swiper-button-next --icon-arrow"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="subscribe">
+					<div class="subscribe__container">
+						<div class="subscribe__wrapper">
+							<h2 class="subscribe__title">Subscribe to get the latest news about us</h2>
+							<p class="subscribe__info">
+								Sign up for our newsletter & knowing about offers We never spam your inbox, so don't worry.
+							</p>
+							<form data-fls-form="ajax" class="subscribe__form" action="files/sendmail/sendmail.php" method="POST">
+								<div class="subscribe__item">
+									<input type="email" required autocomplete="off" name="email" data-fls-form-errtext="Error email" placeholder="Enter your email" class="subscribe__input">
+								</div>
+								<button data-fls-button="" type="submit" class="subscribe__button button">
+									<span class="button__icon --icon-arrow-big">
+										<img src="./assets/img/icons/cyrcle.svg" alt="icon">
+									</span>
+									<span>subscribe now</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" data-fls-watcher="" data-fls-watcher-threshold="0.8" data-fls-watcher-once="" class="footer">
+				<picture>
+					<img data-prlx-mouse="" data-prlx-dyr="" data-prlx-cx="100" class="footer__cloud-lt" alt="Image" src="./assets/img/footer/cloud1.webp">
+				</picture>
+				<picture>
+					<img data-prlx-mouse="" data-prlx-dxr="" data-prlx-cy="800" class="footer__cloud-lb" alt="Image" src="./assets/img/footer/cloud2.webp">
+				</picture>
+				<picture>
+					<img class="footer__img" alt="Image" src="./assets/img/footer/girl.webp">
+				</picture>
+				<div class="footer__container">
+					<div class="footer__body">
+						<div class="footer__header">
+							<div data-fls-spollers="992" data-fls-spollers-one="" class="footer__spollers spollers">
+								<details class="spollers__item">
+									<summary class="spollers__title">about</summary>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">our story</a>
+										<a class="spollers__link" href="#">our impact</a>
+										<a class="spollers__link" href="#">FAQ</a>
+									</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">customer recourses</summary>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">e-catalog</a>
+										<a class="spollers__link" href="#">request catalog</a>
+										<a class="spollers__link" href="#">support</a>
+									</div>
+								</details>
+								<details class="spollers__item">
+									<summary class="spollers__title">services</summary>
+									<div class="spollers__body">
+										<a class="spollers__link" href="#">delivery & shipping</a>
+										<a class="spollers__link" href="#">returns</a>
+										<a class="spollers__link" href="#">guarantee</a>
+									</div>
+								</details>
+							</div>
+							<div class="footer__contacts">
+								<a class="footer__contact --icon-location" href="#">12 jhon Avenue #2, new York</a>
+								<a class="footer__contact --icon-mail-bg" href="#">sleepy@shop.com</a>
+								<a class="footer__contact --icon-tel" href="#">+1-222-34-sleep</a>
+								<div class="footer__socials">
+									<span>social media:</span>
+									<a href="#" class="--icon-linkedin"></a>
+									<a href="#" class="--icon-pinterest"></a>
+									<a href="#" class="--icon-inst"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<p>Created By Elinaui9</p>
+						<p>Copyright 2023 sleepy shop . All rights reserved.</p>
+					</div>
+				</div>
+				<picture>
+					<img data-prlx-mouse="" data-prlx-cx="150" class="footer__cloud-rt" alt="Image" src="./assets/img/footer/cloud-rt.webp">
+				</picture>
+				<picture>
+					<img data-prlx-mouse="" data-prlx-cx="100" class="footer__cloud-rb" alt="Image" src="./assets/img/footer/cloud-rb.webp">
+				</picture>
+			</footer>
+		</div>
+	</body>
+</html>
