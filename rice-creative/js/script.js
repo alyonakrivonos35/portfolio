@@ -22,7 +22,12 @@ function documentActions(e) {
 			html.classList.toggle('menu-open');
 			html.classList.toggle('lock');
 		}
-		targetElement.closest('.menu__link') && html.classList.contains('menu-open') ? html.classList.remove('menu-open') : null
+		if (targetElement.closest('.menu__link') && html.classList.contains('menu-open')) {
+			html.classList.remove('menu-open');
+			html.classList.remove('lock');
+		} else {
+			return null;
+		}
 	}
 }
 
