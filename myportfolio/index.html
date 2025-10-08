@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/img/favicon.ico">
+		<title>Alona Saltovska</title>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759924817988"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1759924817988">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759924817988">
+	</head>
+	<body>
+		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<span class="header__logo">Alona Saltovska</span>
+					<div class="header__menu menu">
+						<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+							<span></span>
+						</button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#hero" class="menu__link menu__link--active">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="#skills" class="menu__link">Technologies</a>
+								</li>
+								<li class="menu__item">
+									<a href="#works" class="menu__link">Portfolio</a>
+								</li>
+								<li class="menu__item">
+									<a href="#about" class="menu__link">About me</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<!--
+<fetch url="@components/layout/menu/menu.json">
+<each loop='item in response'>
+</each>
+</fetch>
+-->
+				</div>
+			</header>
+			<main class="page">
+				<section id="hero" data-fls-watcher="" data-fls-watcher-threshold="0.5" class="hero">
+					<div class="hero__container">
+						<div class="hero__content">
+							<h1 class="hero__title">
+								Frontend
+								<br>
+								Developer
+							</h1>
+							<div class="hero__text">
+								<p>
+									Hello, I'm Alona Saltovska — Frontend Developer with a passion for creating beautiful and responsive
+						websites.
+								</p>
+							</div>
+							<a href="#works" class="hero__button">
+								<span>My works</span>
+								<img src="./assets/img/icons/arrow-right-up.svg" alt="icon arrow">
+							</a>
+						</div>
+						<div class="hero__media">
+							<div class="hero__images">
+								<picture>
+									<source media="(max-width: 600px)" srcset="./assets/img/hero/hero-600.webp" type="image/webp">
+									<img class="hero__img" alt="Image" src="./assets/img/hero/hero.webp">
+								</picture>
+								<picture>
+									<img class="hero__rectangle" alt="rectangle" src="./assets/img/hero/rectangle.webp">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="skills" data-fls-watcher="" data-fls-watcher-threshold="0.5" class="skills">
+					<div class="skills__container">
+						<h2 class="skills__title">Skills & Tools</h2>
+						<ul data-fls-watcher="" data-fls-watcher-once="" class="skills__list">
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/html.svg" alt="html icon">
+								</div>
+								<h3 class="skills__name">HTML5</h3>
+								<p class="skills__text">Semantic and accessible markup for clean, structured websites.</p>
+							</li>
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/css.svg" alt="css icon">
+								</div>
+								<h3 class="skills__name">CSS3</h3>
+								<p class="skills__text">Modern, responsive, and visually appealing layouts.</p>
+							</li>
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/js.svg" alt="js icon">
+								</div>
+								<h3 class="skills__name">JavaScript</h3>
+								<p class="skills__text">Interactive and dynamic user experiences.</p>
+							</li>
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/vscode.svg" alt="vscode">
+								</div>
+								<h3 class="skills__name">VS Code</h3>
+								<p class="skills__text">Efficient development with customized workspace setup.</p>
+							</li>
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/figma.svg" alt="figma icon">
+								</div>
+								<h3 class="skills__name">Figma</h3>
+								<p class="skills__text">Translating design concepts into responsive web layouts.</p>
+							</li>
+							<li class="skills__item">
+								<div class="skills__icon">
+									<img src="./assets/img/icons/github.svg" alt="github icon">
+								</div>
+								<h3 class="skills__name">GitHub</h3>
+								<p class="skills__text">Version control and collaboration on web projects.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section id="works" data-fls-watcher="" data-fls-watcher-threshold="0.5" class="works">
+					<div class="works__container">
+						<h2 class="works__title">My works</h2>
+						<div data-fls-slider="" class="works__slider swiper">
+							<div class="works__wrapper swiper-wrapper">
+								<div class="works__slide slide-work swiper-slide">
+									<a class="slide-work__link" href="https://alyonakrivonos35.github.io/portfolio/bedlinen/index.html" target="_blank">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/works/bedlinen_2-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/bedlinen_2-1200.webp" type="image/webp">
+											<img alt="bedlinen website" src="./assets/img/works/bedlinen_2.webp">
+										</picture>
+									</a>
+								</div>
+								<div class="works__slide slide-work swiper-slide">
+									<a class="slide-work__link" href="https://alyonakrivonos35.github.io/portfolio/qitchen/index.html" target="_blank">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/works/qitchen-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/qitchen-1200.webp" type="image/webp">
+											<img alt="qitchen website" src="./assets/img/works/qitchen.webp">
+										</picture>
+									</a>
+								</div>
+								<div class="works__slide slide-work swiper-slide">
+									<a class="slide-work__link" href="https://alyonakrivonos35.github.io/portfolio/blinqpay/index.html" target="_blank">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/works/blinqpay-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/blinqpay-1200.webp" type="image/webp">
+											<img alt="blinqpay website" src="./assets/img/works/blinqpay.webp">
+										</picture>
+									</a>
+								</div>
+								<div class="works__slide slide-work swiper-slide">
+									<a class="slide-work__link" href="https://alyonakrivonos35.github.io/portfolio/solveig/index.html" target="_blank">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/works/solveign-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/solveign-1200.webp" type="image/webp">
+											<img alt="solveig website" src="./assets/img/works/solveign.webp">
+										</picture>
+									</a>
+								</div>
+								<div class="works__slide slide-work swiper-slide">
+									<a class="slide-work__link" href="https://alyonakrivonos35.github.io/portfolio/rice-creative/index.html" target="_blank">
+										<picture>
+											<source media="(max-width: 600px)" srcset="./assets/img/works/rise-600.webp" type="image/webp">
+											<source media="(max-width: 1200px)" srcset="./assets/img/works/rise-1200.webp" type="image/webp">
+											<img alt="rise website" src="./assets/img/works/rise.webp">
+										</picture>
+									</a>
+								</div>
+							</div>
+							<div class="works__button-pagination swiper-pagination"></div>
+						</div>
+					</div>
+				</section>
+				<section id="about" data-fls-watcher="" data-fls-watcher-threshold="0.5" class="about">
+					<div class="about__container">
+						<div class="about__contact contact">
+							<p class="contact__subtitle">Do you have a project to discuss?</p>
+							<h3 class="contact__title">Get in touch</h3>
+							<div class="contact__mail">
+								<span>E-mail:</span>
+								<a href="mailto:alyonakrivonos35@gmail.com">alyonakrivonos35@gmail.com</a>
+							</div>
+							<div class="contact__socials">
+								<span>Social media:</span>
+								<div class="contact__links">
+									<a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener">
+										<img src="./assets/img/icons/linkedin.svg" alt="LinkedIn">
+									</a>
+									<a href="https://t.me/+380952402516" target="_blank" rel="noopener">
+										<img src="./assets/img/icons/telegram.svg" alt="Telegram">
+									</a>
+									<a href="https://wa.me/380952402516" target="_blank" rel="noopener">
+										<img src="./assets/img/icons/whatsapp.svg" alt="WhatsApp">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="about__info">
+							<h2 class="about__title">About me</h2>
+							<div class="about__text">
+								<p>
+									My name is Alona, and I am a passionate frontend web developer. My primary focus is on creating clean,
+						modern, and responsive user interfaces that are both visually appealing and easy to use. I specialize
+						in HTML, CSS, and JavaScript, and I’m experienced in building responsive layouts that work flawlessly
+						across all devices and screen sizes. In my portfolio, you can find projects that showcase my work —
+						from landing pages to multi-page websites.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__item">© 2025 All Rights Reserved - Alona Saltovska</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
