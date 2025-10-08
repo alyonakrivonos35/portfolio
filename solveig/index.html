@@ -7,12 +7,12 @@
 		<link rel="preload" href="./assets/fonts/ClashDisplay-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Solveig</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1757843484818"></script>
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1759929151478"></script>
 		<link rel="modulepreload" crossorigin="" href="./js/app.min.js">
 		<link rel="modulepreload" crossorigin="" href="./js/banner.min.js">
-		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1757843484818">
-		<link rel="stylesheet" crossorigin="" href="./css/banner.min.css?v=1757843484818">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1757843484818">
+		<link rel="stylesheet" crossorigin="" href="./css/app.min.css?v=1759929151478">
+		<link rel="stylesheet" crossorigin="" href="./css/banner.min.css?v=1759929151478">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1759929151478">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -66,18 +66,19 @@
 								<img class="hero-page__img" alt="Two standing pouch mockups with green caps for product packaging design presentation" src="./assets/img/home/hero.webp">
 							</picture>
 							<div class="hero-page__badge">
-								<svg viewbox="0 0 300 300" width="139" height="139">
+								<svg viewbox="0 0 300 300" width="139" height="139" xmlns="http://www.w3.org/2000/svg">
+									<!-- Коло -->
 									<circle cx="150" cy="150" r="140" fill="#d6ff5c"></circle>
+									<!-- Текст по колу -->
 									<defs>
 										<path id="circlePath" d="M150,150 m-100,0 a100,100 0 1,1 200,0 a100,100 0 1,1 -200,0"></path>
 									</defs>
 									<text font-size="18" font-family="sans-serif" fill="black" letter-spacing="4">
 										<textPath href="#circlePath" startoffset="0%" letter-spacing="13">FREE WEBFLOW TEMPLATE +++</textPath>
 									</text>
-									<g>
-										<svg xmlns="http://www.w3.org/2000/svg" x="131" y="131" width="38" height="38" viewbox="0 0 38 38" fill="none">
-											<path d="M19 0.666687L14 14L0.666626 19L14 24L19 37.3334L24 24L37.3333 19L24 14L19 0.666687Z" fill="black"></path>
-										</svg>
+									<!-- Зірка 60x60 -->
+									<g transform="translate(150 150)">
+										<path d="M30 1.11111L22.1053 22.1053L1.11111 30L22.1053 37.8947L30 58.8889L37.8947 37.8947L58.8889 30L37.8947 22.1053L30 1.11111Z" fill="black" transform="translate(-30 -30)"></path>
 									</g>
 								</svg>
 							</div>

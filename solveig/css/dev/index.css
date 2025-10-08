@@ -7,8 +7,6 @@
 }
 .hero-page__title {
   color: var(--text-default, #000);
-}
-.hero-page__title {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.0625rem;
@@ -55,8 +53,6 @@
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-items: center;
-}
-.statistics__list {
   row-gap: 1.25rem;
 }
 .statistics__item {
@@ -79,8 +75,6 @@
 }
 .statistics__number {
   color: #d2f65a;
-}
-.statistics__number {
   font-weight: 600;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
@@ -119,8 +113,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.clients__list {
   row-gap: 1.25rem;
 }
 .list {
@@ -163,8 +155,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-.list__title {
   line-height: 1.2;
   letter-spacing: 0.0625rem;
   text-transform: uppercase;
@@ -212,6 +202,7 @@
   letter-spacing: 0.125rem;
   text-transform: uppercase;
 }
+
 .gallery__banner {
   line-height: 1.2;
   letter-spacing: 0.0625rem;
@@ -289,6 +280,7 @@
   font-size: 0.8125rem;
   letter-spacing: 0.125rem;
 }
+
 .create {
   background-color: #000;
 }
@@ -307,8 +299,6 @@
   margin-inline: auto;
   margin-bottom: 2rem;
   color: #fff;
-}
-.create__title {
   font-weight: 600;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
