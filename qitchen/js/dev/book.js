@@ -1,5 +1,6 @@
-import { g as gotoBlock } from "./app.min.js";
+import "./main.min.js";
 /* empty css           */
+import { g as gotoBlock } from "./common.min.js";
 function getDefaultExportFromCjs(x) {
   return x && x.__esModule && Object.prototype.hasOwnProperty.call(x, "default") ? x["default"] : x;
 }

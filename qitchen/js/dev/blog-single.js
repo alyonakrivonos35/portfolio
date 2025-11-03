@@ -1,5 +1,6 @@
-import "./app.min.js";
+import "./main.min.js";
 /* empty css           */
+import "./common.min.js";
 fetch("./files/blog-single.json").then((res) => res.json()).then((data) => {
   const params = new URLSearchParams(window.location.search);
   let id = parseInt(params.get("id"), 10);
