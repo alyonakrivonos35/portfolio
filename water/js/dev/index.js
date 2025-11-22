@@ -4780,38 +4780,6 @@ function initSliders() {
       spaceBetween: 10,
       //autoHeight: true,
       speed: 800,
-      //touchRatio: 0,
-      //simulateTouch: false,
-      //loop: true,
-      //preloadImages: false,
-      //lazy: true,
-      /*
-      // Ефекти
-      effect: 'fade',
-      */
-      // autoplay: {
-      // 	delay: 7000,
-      // 	disableOnInteraction: false,
-      // },
-      // Пагінація
-      /*
-      pagination: {
-      	el: '.swiper-pagination',
-      	clickable: true,
-      },
-      */
-      // Скроллбар
-      /*
-      scrollbar: {
-      	el: '.swiper-scrollbar',
-      	draggable: true,
-      },
-      */
-      // Кнопки "вліво/вправо"
-      // navigation: {
-      // 	prevEl: '.hero__prev',
-      // 	nextEl: '.hero__next',
-      // },
       // Брейкпоінти
       breakpoints: {
         450: {
@@ -4834,9 +4802,7 @@ function initSliders() {
           spaceBetween: 36,
           slidesPerView: 5
         }
-      },
-      // Події
-      on: {}
+      }
     });
   }
 }

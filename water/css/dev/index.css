@@ -1259,14 +1259,11 @@ body {
   margin-bottom: 2.375rem;
 }
 .catalog__title {
+  flex-shrink: 0;
   border-radius: 1.5625rem;
   background: #f6fcff;
-  width: 20rem;
   aspect-ratio: 1/1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  width: auto;
   padding: 0.625rem;
   transition: all 0.3s ease;
 }
@@ -1275,7 +1272,6 @@ body {
   transition: all 0.5s ease;
 }
 .catalog__img {
-  flex-grow: 1;
   max-width: 100%;
   max-height: 62.5%;
   object-fit: contain;
@@ -1303,7 +1299,7 @@ body {
   object-fit: cover;
 }
 .card-catalog__content {
-  flex: 1 1 62.8%;
+  flex: 0 1 62.8%;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1463,6 +1459,11 @@ body {
   }
   .phone span {
     font-size: 1rem;
+  }
+}
+@media (max-width: 75em) {
+  .card-catalog__content {
+    flex: 1 1 62.8%;
   }
 }
 @media (max-width: 61.99875em) {
