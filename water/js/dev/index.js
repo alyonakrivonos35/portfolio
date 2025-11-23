@@ -5322,6 +5322,8 @@ function initSliders() {
       observeParents: true,
       slidesPerView: 2.6,
       spaceBetween: 10,
+      slideToClickedSlide: true,
+      watchSlidesProgress: true,
       //autoHeight: true,
       speed: 800,
       // Брейкпоінти
