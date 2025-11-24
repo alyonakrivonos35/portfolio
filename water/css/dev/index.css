@@ -1401,12 +1401,14 @@ textarea.input {
   margin-bottom: 4.5625rem;
 }
 .number-form__label {
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+.number-form__field {
   position: relative;
   display: flex;
   align-items: center;
   gap: 1.5625rem;
-  font-size: 1.75rem;
-  line-height: 1.2;
   margin-right: 1rem;
 }
 .number-form__input {
@@ -2458,6 +2460,9 @@ body::after {
   }
   .number-form__label {
     font-size: 1.125rem;
+    gap: 1.25rem;
+  }
+  .number-form__field {
     gap: 1.25rem;
   }
   .number-form__price {

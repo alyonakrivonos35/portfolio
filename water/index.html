@@ -17,11 +17,11 @@
 	<meta name="description"
 		content="Доставка якісної питної води по Харкову: бутиль 19 л, кулери, помпи. М’яка, прісна вода гідрокарбонатно-сульфатно-натрієвого типу з мінералізацією 320–420 мг/дм³ та рН 8.2–8.5. Корисна для профілактики каменів, серцево-судинних та шлунково-кишкових захворювань. Є сертифікати якості.">
 	<title>Ефект | Доставка питної води</title>
-	<script type="module" crossorigin="" src="./js/index.min.js?v=1763986866022"></script>
-	<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1763986866022">
-	<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763986866022">
-	<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?v=1763986866022"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?v=1763986866022">
+	<script type="module" crossorigin="" src="./js/index.min.js?v=1763993739438"></script>
+	<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1763993739438">
+	<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1763993739438">
+	<script defer src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js?v=1763993739438"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?v=1763993739438">
 </head>
 
 <body>
@@ -128,31 +128,31 @@
 								<picture>
 									<img class="catalog__img" alt="Акції" src="./assets/img/catalog/menu/promotions.webp">
 								</picture>
-								<p class="catalog__label">Акції</p>
+								<span class="catalog__label">Акції</span>
 							</button>
 							<button type="button" class="catalog__title swiper-slide">
 								<picture>
 									<img class="catalog__img" alt="Бутиль 19 л" src="./assets/img/catalog/menu/butyl.webp">
 								</picture>
-								<p class="catalog__label">Бутиль 19 л</p>
+								<span class="catalog__label">Бутиль 19 л</span>
 							</button>
 							<button type="button" class="catalog__title swiper-slide">
 								<picture>
 									<img class="catalog__img" alt="Кулер" src="./assets/img/catalog/menu/cooler.webp">
 								</picture>
-								<p class="catalog__label">Кулер</p>
+								<span class="catalog__label">Кулер</span>
 							</button>
 							<button type="button" class="catalog__title swiper-slide">
 								<picture>
 									<img class="catalog__img" alt="Помпи" src="./assets/img/catalog/menu/pumps.webp">
 								</picture>
-								<p class="catalog__label">Помпи</p>
+								<span class="catalog__label">Помпи</span>
 							</button>
 							<button type="button" class="catalog__title swiper-slide">
 								<picture>
 									<img class="catalog__img" alt="Помпи" src="./assets/img/catalog/menu/sets.webp">
 								</picture>
-								<p class="catalog__label">Набори</p>
+								<span class="catalog__label">Набори</span>
 							</button>
 						</nav>
 						<div data-fls-tabs-body="" class="catalog__content">
@@ -538,15 +538,15 @@
 					<h3 class="order-popup__title">Бажаєте замовити?</h3>
 					<form data-fls-form="" class="order-popup__form form" method="POST" action="#">
 						<div class="form__number number-form">
-							<label class="number-form__label">
-								<span>Вкажіть бажану кількість:</span>
-								<input data-fls-input="" required autocomplete="off" type="number" name="number" min="1"
-									class="number-form__input input">
-								<div class="number-form__controls">
+							<label for="num" class="number-form__label">Вкажіть бажану кількість:</label>
+							<div class="number-form__field">
+								<input id="num" data-fls-input="" required autocomplete="off" type="number" name="number"
+									min="1" class="number-form__input input">
+								<span class="number-form__controls">
 									<button type="button" class="btn-up --icon-arrow"></button>
 									<button type="button" class="btn-down --icon-arrow"></button>
-								</div>
-							</label>
+								</span>
+							</div>
 							<span class="number-form__price">1 бутиль = 120 грн</span>
 						</div>
 						<div class="form__subtitle">Вкажіть інформацію, важливу для доставки</div>
