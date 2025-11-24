@@ -5427,6 +5427,45 @@ function initSliders() {
       }
     });
   }
+  if (document.querySelector(".promotions")) {
+    new Swiper(".promotions", {
+      // <- Вказуємо склас потрібного слайдера
+      // Підключаємо модулі слайдера
+      // для конкретного випадку
+      modules: [Navigation],
+      observer: true,
+      observeParents: true,
+      slidesPerView: 1,
+      spaceBetween: 10,
+      autoHeight: true,
+      speed: 800,
+      // Кнопки "вліво/вправо"
+      navigation: {
+        prevEl: ".promotions__prev",
+        nextEl: ".promotions__next"
+      }
+      // Брейкпоінти
+      /*breakpoints: {
+      	450: {
+      		slidesPerView: 2,
+      		spaceBetween: 15,
+      	},
+      	768: {
+      		slidesPerView: 3,
+      		spaceBetween: 15,
+      	},
+      	1000: {
+      		slidesPerView: 4,
+      		spaceBetween: 25,
+      	},
+      	1350: {
+      		slidesPerView: 5,
+      		spaceBetween: 41,
+      	},
+      },
+      */
+    });
+  }
 }
 document.querySelector("[data-fls-slider]") ? window.addEventListener("load", initSliders) : null;
 class Popup {
@@ -5740,288 +5779,6 @@ function menuInit() {
   });
 }
 document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
-function setScriptSrc(script, src) {
-  script.src = src;
-}
-const bootstrap = (bootstrapParams) => {
-  var bootstrapPromise;
-  var script;
-  var bootstrapParamsKey;
-  var PRODUCT_NAME = "The Google Maps JavaScript API";
-  var GOOGLE = "google";
-  var IMPORT_API_NAME = "importLibrary";
-  var PENDING_BOOTSTRAP_KEY = "__ib__";
-  var doc = document;
-  var global_ = window;
-  var google_ = global_[GOOGLE] || (global_[GOOGLE] = {});
-  var namespace = google_.maps || (google_.maps = {});
-  var libraries = /* @__PURE__ */ new Set();
-  var searchParams = new URLSearchParams();
-  var triggerBootstrap = () => bootstrapPromise || (bootstrapPromise = new Promise(async (resolve, reject) => {
-    await (script = doc.createElement("script"));
-    searchParams.set("libraries", [...libraries] + "");
-    for (bootstrapParamsKey in bootstrapParams) {
-      searchParams.set(bootstrapParamsKey.replace(/[A-Z]/g, (g) => "_" + g[0].toLowerCase()), bootstrapParams[bootstrapParamsKey]);
-    }
-    searchParams.set("callback", GOOGLE + ".maps." + PENDING_BOOTSTRAP_KEY);
-    setScriptSrc(script, "https://maps.googleapis.com/maps/api/js?" + searchParams);
-    namespace[PENDING_BOOTSTRAP_KEY] = resolve;
-    script.onerror = () => bootstrapPromise = reject(Error(PRODUCT_NAME + " could not load."));
-    script.nonce = doc.querySelector("script[nonce]")?.nonce || "";
-    doc.head.append(script);
-  }));
-  namespace[IMPORT_API_NAME] ? console.warn(PRODUCT_NAME + " only loads once. Ignoring:", bootstrapParams) : namespace[IMPORT_API_NAME] = (libraryName, ...args) => libraries.add(libraryName) && triggerBootstrap().then(() => namespace[IMPORT_API_NAME](libraryName, ...args));
-};
-const MSG_REPEATED_SET_OPTIONS = (options) => `The setOptions() function should only be called once. The options passed to the additional call (${JSON.stringify(options)}) will be ignored.`;
-const MSG_IMPORT_LIBRARY_EXISTS = (options) => `The google.maps.importLibrary() function is already defined, and @googlemaps/js-api-loader will use the existing function instead of overwriting it. The options passed to setOptions (${JSON.stringify(options)}) will be ignored.`;
-const logDevWarning = () => {
-};
-const logDevNotice = () => {
-};
-let setOptionsWasCalled_ = false;
-function setOptions(options) {
-  if (setOptionsWasCalled_) {
-    logDevWarning(MSG_REPEATED_SET_OPTIONS(options));
-    return;
-  }
-  installImportLibrary_(options);
-  setOptionsWasCalled_ = true;
-}
-async function importLibrary(libraryName) {
-  if (!window?.google?.maps?.importLibrary) {
-    throw new Error("google.maps.importLibrary is not installed.");
-  }
-  return await google.maps.importLibrary(libraryName);
-}
-function installImportLibrary_(options) {
-  const importLibraryExists = Boolean(window.google?.maps?.importLibrary);
-  if (importLibraryExists) {
-    logDevNotice(MSG_IMPORT_LIBRARY_EXISTS(options));
-  }
-  if (!importLibraryExists) {
-    bootstrap(options);
-  }
-}
-const MAP_KEY = `MAP_KEY_HERE`;
-const MAP_STYLES = [
-  {
-    featureType: "administrative",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        color: "#B1AEAE"
-      }
-    ]
-  },
-  {
-    featureType: "landscape",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#E5E2E2"
-      }
-    ]
-  },
-  {
-    featureType: "poi",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        saturation: -100
-      },
-      {
-        lightness: 45
-      }
-    ]
-  },
-  {
-    featureType: "poi",
-    elementType: "labels.text",
-    stylers: [
-      {
-        visibility: "off"
-      }
-    ]
-  },
-  {
-    featureType: "road",
-    elementType: "geometry.fill",
-    stylers: [
-      {
-        color: "#D6D3D3"
-      }
-    ]
-  },
-  {
-    featureType: "road",
-    elementType: "geometry.stroke",
-    stylers: [
-      {
-        color: "#CECBCB"
-      }
-    ]
-  },
-  {
-    featureType: "road",
-    elementType: "labels.text.fill",
-    stylers: [
-      {
-        color: "#B0AEAE"
-      }
-    ]
-  },
-  {
-    featureType: "road",
-    elementType: "labels.text.stroke",
-    stylers: [
-      {
-        color: "#E4E1E1"
-      }
-    ]
-  },
-  {
-    featureType: "road.highway",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "simplified"
-      },
-      {
-        saturation: -100
-      }
-    ]
-  },
-  {
-    featureType: "road.arterial",
-    elementType: "labels.icon",
-    stylers: [
-      {
-        visibility: "off"
-      }
-    ]
-  },
-  {
-    featureType: "transit",
-    elementType: "all",
-    stylers: [
-      {
-        visibility: "on"
-      },
-      {
-        saturation: -100
-      },
-      {
-        lightness: 50
-      }
-    ]
-  },
-  {
-    featureType: "water",
-    elementType: "all",
-    stylers: [
-      {
-        color: "#D0CDCD"
-      },
-      {
-        visibility: "on"
-      }
-    ]
-  }
-];
-function mapInit() {
-  const SELECTORS = {
-    section: "[data-fls-map]",
-    marker: "[data-fls-map-marker]",
-    map: "[data-fls-map-body]"
-  };
-  const $sections = document.querySelectorAll(SELECTORS.section);
-  if (!$sections.length) return;
-  const loadMap = async (onLoad2) => {
-    setOptions({
-      apiKey: MAP_KEY,
-      version: "weekly"
-    });
-    try {
-      const { Map: Map2 } = await importLibrary("maps");
-      const { AdvancedMarkerElement } = await importLibrary("marker");
-      const { LatLng } = await importLibrary("core");
-      onLoad2({ Map: Map2, AdvancedMarkerElement, LatLng });
-    } catch (e) {
-      console.log(e);
-    }
-  };
-  const initMap = async ({ api, lng, lat, markersData, zoom, maxZoom, $map }) => {
-    const mapOptions = {
-      maxZoom,
-      zoom,
-      mapTypeControl: false,
-      styles: MAP_STYLES,
-      center: {
-        lat,
-        lng
-      },
-      disableDefaultUI: true,
-      mapId: "DEMO_MAP_ID"
-    };
-    const map = new api.Map($map, mapOptions);
-    await markersData.map(({ lat: lat2, lng: lng2, icon, title, markerZoom, markerPopup }) => {
-      let image;
-      if (icon) {
-        image = document.createElement("img");
-        image.src = icon;
-      }
-      const marker = new api.AdvancedMarkerElement({
-        map,
-        title,
-        gmpClickable: true,
-        position: new api.LatLng(lat2, lng2),
-        content: icon ? image : null
-      });
-      marker.addEventListener("gmp-click", () => {
-        markerZoom.enable ? map.setZoom(+markerZoom.value || 10) : null;
-        if (markerPopup.enable && window.flsPopup) {
-          window.flsPopup.open(markerPopup.value);
-        }
-        map.panTo(marker.position);
-      });
-      return marker;
-    });
-    return map;
-  };
-  loadMap((api) => {
-    $sections.forEach(($section) => {
-      const $maps = $section.querySelectorAll(SELECTORS.map);
-      if (!$maps.length) return;
-      $maps.forEach(($map) => {
-        const $markers = $map.parentElement.querySelectorAll(SELECTORS.marker);
-        const markersData = Array.from($markers).map(($marker) => ({
-          lng: parseFloat($marker.dataset.flsMapLng) || 0,
-          lat: parseFloat($marker.dataset.flsMapLat) || 0,
-          icon: $marker.dataset.flsMapIcon,
-          title: $marker.dataset.flsMapTitle,
-          markerZoom: {
-            enable: $marker.hasAttribute("data-fls-map-marker-zoom"),
-            value: $marker.dataset.flsMapMarkerZoom
-          },
-          markerPopup: {
-            enable: $marker.hasAttribute("data-fls-map-marker-popup"),
-            value: $marker.dataset.flsMapMarkerPopup
-          }
-        }));
-        const map = initMap({
-          api,
-          $map,
-          lng: parseFloat($map.dataset.flsMapLng) || 0,
-          lat: parseFloat($map.dataset.flsMapLat) || 0,
-          zoom: parseFloat($map.dataset.flsMapZoom) || 6,
-          maxZoom: parseFloat($map.dataset.flsMapMaxZoom) || 18,
-          markersData
-        });
-      });
-    });
-  });
-}
-document.querySelector("[data-fls-map]") ? window.addEventListener("load", mapInit) : null;
 function throttle(fn, delay) {
   let lastCall = 0;
   return function(...args) {
