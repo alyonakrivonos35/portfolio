@@ -2752,6 +2752,11 @@ body::after {
     font-size: 1rem;
   }
 }
+@media (max-width: 31.25em){
+  .button--card {
+    width: 100%;
+  }
+}
 @media (width <= 30em){
   .footer__body {
     padding-top: 1.25rem;
@@ -2895,11 +2900,6 @@ body::after {
   }
   .button--card {
     padding-inline: 0.9375rem;
-  }
-}
-@media (max-width: 25em){
-  .button--card {
-    width: 100%;
   }
 }
 @media (width <= 23.4375em){

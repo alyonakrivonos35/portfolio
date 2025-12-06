@@ -5788,7 +5788,7 @@ function menuInit() {
       document.documentElement.toggleAttribute("data-fls-menu-open");
       return;
     }
-    const menuItem = e.target.closest(".menu__subitem, .menu__sublink");
+    const menuItem = e.target.closest(".menu__subitem");
     if (menuItem && bodyLockStatus) {
       document.documentElement.removeAttribute("data-fls-menu-open");
       document.documentElement.removeAttribute("data-fls-scrolllock");
