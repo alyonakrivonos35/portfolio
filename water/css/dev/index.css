@@ -112,11 +112,12 @@ body {
   font-size: 1rem;
   background-color: #fff;
 }
-[data-fls-scrolllock] body {
+html[data-fls-scrolllock] body {
   overflow: hidden;
-  touch-action: none;
   overscroll-behavior: none;
+  touch-action: pan-y;
 }
+
 .wrapper {
   min-height: 100%;
   display: flex;
