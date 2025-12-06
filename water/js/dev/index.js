@@ -31,6 +31,7 @@ import { g as getHash, d as dataMediaQueries, s as slideDown, a as setHash, b as
 function tabs() {
   const tabs2 = document.querySelectorAll("[data-fls-tabs]");
   let tabsActiveHash = [];
+  const sublinks = document.querySelectorAll(".menu__sublink");
   if (tabs2.length > 0) {
     const hash = getHash();
     if (hash && hash.startsWith("tab-")) {
@@ -142,6 +143,36 @@ function tabs() {
       e.preventDefault();
     }
   }
+  sublinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const category = link.dataset.category;
+      if (!category) return;
+      const targetTab = [...document.querySelectorAll("[data-fls-tabs-title]")].find(
+        (btn) => btn.dataset.category === category
+      );
+      if (!targetTab) return;
+      const tabsBlock = targetTab.closest("[data-fls-tabs]");
+      const allTabs = tabsBlock.querySelectorAll("[data-fls-tabs-title]");
+      allTabs.forEach((tab) => {
+        tab.classList.remove("--tab-active", "swiper-slide-active");
+      });
+      targetTab.classList.add("--tab-active", "swiper-slide-active");
+      if (typeof setTabsStatus === "function") {
+        setTabsStatus(tabsBlock);
+      }
+      tabsBlock.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+      if (window.swiper) {
+        const swiperIndex = [...allTabs].indexOf(targetTab);
+        if (swiperIndex >= 0) {
+          window.swiper.slideTo(swiperIndex);
+        }
+      }
+    });
+  });
 }
 window.addEventListener("load", tabs);
 let formValidate = {
@@ -5320,7 +5351,7 @@ function initSliders() {
       modules: [Navigation],
       observer: true,
       observeParents: true,
-      slidesPerView: 2.6,
+      slidesPerView: 3.5,
       spaceBetween: 10,
       slideToClickedSlide: true,
       watchSlidesProgress: true,
@@ -5329,16 +5360,16 @@ function initSliders() {
       // Брейкпоінти
       breakpoints: {
         450: {
-          spaceBetween: 15,
-          slidesPerView: 3.5
+          spaceBetween: 10,
+          slidesPerView: 3.8
         },
-        450: {
-          spaceBetween: 15,
-          slidesPerView: 3.5
+        550: {
+          spaceBetween: 10,
+          slidesPerView: 4.5
         },
         768: {
           spaceBetween: 15,
-          slidesPerView: 4.5
+          slidesPerView: 5
         },
         992: {
           spaceBetween: 20,
@@ -5429,7 +5460,7 @@ function initSliders() {
   }
   if (document.querySelector(".promotions")) {
     new Swiper(".promotions", {
-      // <- Вказуємо склас потрібного слайдера
+      // <- Вказуємо клас потрібного слайдера
       // Підключаємо модулі слайдера
       // для конкретного випадку
       modules: [Navigation],
@@ -5444,26 +5475,6 @@ function initSliders() {
         prevEl: ".promotions__prev",
         nextEl: ".promotions__next"
       }
-      // Брейкпоінти
-      /*breakpoints: {
-      	450: {
-      		slidesPerView: 2,
-      		spaceBetween: 15,
-      	},
-      	768: {
-      		slidesPerView: 3,
-      		spaceBetween: 15,
-      	},
-      	1000: {
-      		slidesPerView: 4,
-      		spaceBetween: 25,
-      	},
-      	1350: {
-      		slidesPerView: 5,
-      		spaceBetween: 41,
-      	},
-      },
-      */
     });
   }
 }
@@ -5775,10 +5786,37 @@ function menuInit() {
     if (bodyLockStatus && e.target.closest("[data-fls-menu]")) {
       bodyLockToggle();
       document.documentElement.toggleAttribute("data-fls-menu-open");
+      return;
+    }
+    const menuItem = e.target.closest(".menu__subitem, .menu__sublink");
+    if (menuItem && bodyLockStatus) {
+      document.documentElement.removeAttribute("data-fls-menu-open");
+      document.documentElement.removeAttribute("data-fls-scrolllock");
     }
   });
 }
 document.querySelector("[data-fls-menu]") ? window.addEventListener("load", menuInit) : null;
+const menuItems = document.querySelectorAll(".menu__item");
+const menuLinks = document.querySelectorAll(".menu__item > .menu__link");
+function isMobileWidth() {
+  return window.innerWidth <= 1500;
+}
+menuLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    if (!isMobileWidth()) return;
+    e.preventDefault();
+    const parent = link.parentElement;
+    menuItems.forEach((item) => {
+      if (item !== parent) item.classList.remove("menu__item--active");
+    });
+    parent.classList.toggle("menu__item--active");
+  });
+});
+window.addEventListener("resize", () => {
+  if (!isMobileWidth()) {
+    menuItems.forEach((item) => item.classList.remove("menu__item--active"));
+  }
+});
 function throttle(fn, delay) {
   let lastCall = 0;
   return function(...args) {
