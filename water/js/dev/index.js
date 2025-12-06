@@ -5791,7 +5791,8 @@ function menuInit() {
     const menuItem = e.target.closest(".menu__subitem");
     if (menuItem && bodyLockStatus) {
       document.documentElement.removeAttribute("data-fls-menu-open");
-      document.documentElement.removeAttribute("data-fls-scrolllock");
+      bodyLockToggle();
+      return;
     }
   });
 }
